@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+    <script src="./calculator.js"></script>
+</head>
+
+<body>
+    <main>
+
+        <!------------------------------------- Calculator Box  --------------------------------------------->
+        <div class="container">
+
+            <!--------------- Common Input Box  -------------------------->
+            <div class="input-box">
+                <input type="text" id="input" name="input">
+            </div>
+
+            <!--------------- Button for input by user  ------------------->
+            <div class="buttons">
+                <div>
+                    <button style="background-color: gray;" onclick="clearOut()">AC</button>
+                    <button style="background-color: gray;" onclick="addToInput('+')">+</button>
+                    <button style="background-color: gray;" onclick="addToInput('%')">%</button>
+                    <button style="background-color: orange;" onclick="addToInput('-')">-</button>
+                </div>
+
+                <div>
+                    <button type="button" id="seven" onclick="addToInput('7')">7</button>
+                    <button type="button" id="eight" onclick="addToInput('8')">8</button>
+                    <button type="button" id="nine" onclick="addToInput('9')">9</button>
+                    <button style="background-color: orange;" onclick="addToInput('*')">X</button>
+                </div>
+
+                <div>
+                    <button onclick="addToInput('4')">4</button>
+                    <button onclick="addToInput('5')">5</button>
+                    <button onclick="addToInput('6')">6</button>
+                    <button style="background-color: orange;" onclick="btnClick('-')">-</button>
+                </div>
+
+                <div>
+                    <button type="button" onclick="addToInput('1')">1</button>
+                    <button onclick="addToInput('2')">2</button>
+                    <button onclick="addToInput('3')">3</button>
+                    <button style="background-color: orange;" onclick="addToInput('+')">+</button>
+                </div>
+
+                <div>
+                    <button class="zero" onclick="addToInput('0')">0</button>
+                    <button onclick="addToInput('.')">.</button>
+                    <button style="background-color: orange;" onclick="Cal()">=</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./calculator.js"></script>
+</body>
+
+</html>
